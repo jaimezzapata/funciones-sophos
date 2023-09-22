@@ -13,19 +13,17 @@
 // for(let i = 0; i < 2; i++){
 //     calcularSalario()
 // }
-let numeroUno = Number(prompt("Ingrese un numero: "));
-let numeroDos = Number(prompt("Ingrese un numero: "));
 
-function sumar() {
+function sumar(numeroUno, numeroDos) {
   console.log(numeroUno + numeroDos);
 }
-function restar() {
+function restar(numeroUno, numeroDos) {
   console.log(numeroUno - numeroDos);
 }
-function multiplicar() {
+function multiplicar(numeroUno, numeroDos) {
   console.log(numeroUno * numeroDos);
 }
-function dividir() {
+function dividir(numeroUno, numeroDos) {
   if (numeroDos > 0) {
     console.log(numeroUno / numeroDos);
   } else {
@@ -35,6 +33,8 @@ function dividir() {
 let repetir = true;
 let opcion;
 while (repetir) {
+  let numeroUno = Number(prompt("Ingrese un numero: "));
+  let numeroDos = Number(prompt("Ingrese un numero: "));
   opcion = Number(
     prompt(
       "Seleccione:\n1-Sumar\n2-Restar\n3-Multiplicar\n4-Dividir\n5-Todas\n6-Salir"
@@ -42,22 +42,22 @@ while (repetir) {
   );
   switch (opcion) {
     case 1:
-      sumar();
+      sumar(numeroUno, numeroDos);
       break;
     case 2:
-      restar();
+      restar(numeroUno, numeroDos);
       break;
     case 3:
-      multiplicar();
+      multiplicar(numeroUno, numeroDos);
       break;
     case 4:
-      dividir();
+      dividir(numeroUno, numeroDos);
       break;
     case 5:
-      sumar();
-      restar();
-      multiplicar();
-      dividir();
+      sumar(numeroUno, numeroDos);
+      restar(numeroUno, numeroDos);
+      multiplicar(numeroUno, numeroDos);
+      dividir(numeroUno, numeroDos);
       break;
     case 6:
       repetir = false;

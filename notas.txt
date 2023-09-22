@@ -21,3 +21,7 @@ nombreFuncion -> nombre de la funcion (puede ser cualquier nombre)
     Es la encapsulación de código
 2 - El llamado de la función
     Es la ejecuación del código
+
+Funciones trabajan con parámetros y argumentos
+Los argumentos se definenen en el llamado de la función
+Los parámetros se definene en la definición de la función
