@@ -1,0 +1,23 @@
+Funciones
+Agrupación de código o encapsulación de código el cual se usará cuando se necesite
+
+Función regular
+    Primera aplicación de funciones de JS
+Función flecha
+    En la versión ECMAScript 6+
+Función anónima
+    En la versión ECMAScript 6+
+
+Sintaxis funcion Regular
+function nombreFuncion(){
+
+}
+function -> palabra reservada del lenguaje
+nombreFuncion -> nombre de la funcion (puede ser cualquier nombre)
+() -> espacio para valores dinámicos
+{} -> espacio para el código a encapsular
+
+1 - La definición o la construcción de la función
+    Es la encapsulación de código
+2 - El llamado de la función
+    Es la ejecuación del código
