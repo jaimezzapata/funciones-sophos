@@ -25,3 +25,8 @@ nombreFuncion -> nombre de la funcion (puede ser cualquier nombre)
 Funciones trabajan con parámetros y argumentos
 Los argumentos se definenen en el llamado de la función
 Los parámetros se definene en la definición de la función
+
+Funciones con retorno
+    Extraer un valor de una función para ser usado por fuera de la funcion
+
+Funciones deben ser cortas y precisas
