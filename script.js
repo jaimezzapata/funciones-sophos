@@ -86,7 +86,7 @@
     Se considera hora extra a todo lo que supere a 96 horas
 */
 
-function calcularHorasExtras(cantidadHoras) {
+const calcularHorasExtras = (cantidadHoras) => {
   let horasExtras = 0;
   if (cantidadHoras > 96) {
     horasExtras = cantidadHoras - 96;
@@ -94,15 +94,32 @@ function calcularHorasExtras(cantidadHoras) {
   } else {
     return horasExtras;
   }
-}
+};
 function calcularSalario(cantidadHoras, valorHora, cantidadHorasExtras) {
   console.log(cantidadHorasExtras);
   console.log(
-    ((cantidadHoras - cantidadHorasExtras) * valorHora) +
-       (valorHora * cantidadHorasExtras * 0.25)
+    (cantidadHoras - cantidadHorasExtras) * valorHora +
+      valorHora * cantidadHorasExtras * 0.25
   );
 }
 let cantidadHoras = Number(prompt("Ingrese la cantidad de horas: "));
 let valorHora = Number(prompt("Ingrese el valor de la hora es: "));
 let cantidadHorasExtras = calcularHorasExtras(cantidadHoras);
 calcularSalario(cantidadHoras, valorHora, cantidadHorasExtras);
+
+const funcionFlecha = () => {
+  console.log("Esto es una funcion flecha");
+};
+
+function funcionRegular() {
+  console.log("Esto es una función regular");
+}
+
+funcionFlecha();
+    /* Objetos literales 
+        that
+    */
+funcionRegular();
+    /* POO objeto constructor 
+        this
+    */
